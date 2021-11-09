@@ -1,0 +1,7 @@
+name: phishing
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - pyfunceble-dev>=4.0.2b1
+      - mypdns

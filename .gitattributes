@@ -1,0 +1,28 @@
+.gitattributes merge=ours
+
+crlf		text
+-crlf		-text
+crlf=input	eol=lf
+
+*               text=auto
+*.bash		text eol=lf
+*.md		text eol=lf
+*.sh		text eol=lf
+*.txt		text eol=lf
+*.yaml		text eol=lf
+*.yml		text eol=lf
+add-*       text eol=lf
+ip-*        text eol=lf
+
+# https://git-scm.com/book/en/v2/Customizing-Git-Git-Attributes
+# Section Merge Strategies
+.pyfunceble/                merge=ours
+output/                     merge=ours
+README.md                   merge=ours
+add-domain                  merge=theirs
+add-link                    merge=theirs
+add-wildcard-domain         merge=theirs
+IP-addr.cidr.in-addr.arpa   merge=theirs
+IP-addr.cidr.list           merge=theirs
+IP-addr.in-addr.arpa        merge=theirs
+IP-addr.list                merge=theirs
